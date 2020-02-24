@@ -1,0 +1,29 @@
+.someDiv {
+    height: 200px;
+    width: 500px;
+    background-color: aqua;
+    position: relative;
+    
+}
+
+/* .someDiv:hover {
+    width: 100vw;
+    height: 400px;
+    background-color: red;
+    
+} */
+
+.someDiv:hover .subDiv{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.subDiv{
+    position: absolute;
+    background-color: blue;
+    left: 0;
+    top: 0;
+    transition-property: left, top, transform;
+    transition-duration: 2s;
+}

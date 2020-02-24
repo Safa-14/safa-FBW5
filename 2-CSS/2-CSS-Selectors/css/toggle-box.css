@@ -1,0 +1,15 @@
+input{
+    display: none;
+}
+
+/* .togglebox{
+    display: none;
+} */
+
+input:checked + label{
+    color: red;
+}
+
+/* .togglebox:checked + label{
+    color: red;
+} */

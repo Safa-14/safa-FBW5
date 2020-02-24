@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 50%;
+    height: 500px;
+    background-color: aqua;
+}
+
+.child1 {
+    background-color: rgb(233, 87, 213);
+    width: 100px;
+}
+
+.child2 {
+    background-color: rgb(202, 190, 190);
+    width: 50px;
+}
+
+.span1 {
+    /* inline elements can not have size (width and height) */
+    background-color: blanchedalmond;
+    width: 50%;
+
+    /* display: block; */
+    display: inline-block;
+    border: 1px solid black;
+    /* display: none; */
+
+    /* visibility: hidden; */
+    opacity: .8;
+}
+.span2 {
+    background-color: rgb(110, 71, 11);
+    width: 49%;
+    display: inline-block;
+    margin-left: -3px; 
+    /* padding-left:80px;
+    padding-right:80px; */
+}

@@ -1,0 +1,23 @@
+@import 'main';
+
+$fbw5Color : rgb(21, 207, 207);
+$mediumFont : 25px ;
+
+.container {
+    border: 2px solid black;
+
+    &>div {
+        background-color: $fbw5Color;
+        &:nth-child(1) {
+            font-size:$mediumFont  ;
+            &>p {
+                line-height: 50px;
+            }
+        }
+    }
+} 
+
+.banner {
+    background-color: $fbw5Color;
+}
+

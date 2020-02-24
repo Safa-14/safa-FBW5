@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+ 
+}
+
+.container >div >div:nth-child(1) {
+    background: url(../imgs/nat-5.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 100vh;
+    float: left;
+}
+.container >div >div:nth-child(2) {
+    background: url(../imgs/nat-6.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 100vh;
+    float: left;
+}
+.container >div >div:nth-child(3) {
+    background: url(../imgs/nat-7.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 100vh;
+    float: left;
+}
+.container>div{
+    width: 240vw;
+
+}

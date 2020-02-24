@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header, .footer  {
+    background-color: green;
+    height: 20vh;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    background-color: maroon;
+
+}
+.container>div:nth-child(1) {
+   background-color: ivory;
+   flex-grow: 3;
+   height: 60vh;
+   padding: 10px;
+}
+.container>div:nth-child(2) {
+    background-color: burlywood;
+    flex-grow: 1;
+    height: 60vh;
+    padding: 10px;
+     
+}
+.container>div:nth-child(3) {
+    background-color: lightseagreen;
+    height: 60vh; 
+    flex-grow: 1;
+    padding: 10px;
+}

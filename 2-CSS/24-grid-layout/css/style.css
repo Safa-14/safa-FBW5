@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    height: 300px;
+    grid-template-columns: 50px 50px 50px ;  /*i9asamha 3ala des columns */
+    grid-template-rows: 50px 50px  50px   ;   /* to controll the height */
+
+    /*column-gap: 10px;               ya3mal des espaces binet.hom vertical*/
+    /* grid-row-gap: 10px;            ya3mal des espaces binet.hom horizontal*/
+    grid-gap: 10px 10px;              /*  ya3mal des espaces binet.hom horizontal w verticalen m temps*/
+    justify-content: center;          /* space-evenly,space-around, space-between, center, end*/
+    align-content: center;            /* space-around, space-between, center,end */
+
+   
+   
+    background-color: aqua;
+    padding: 10px;
+}
+
+.container > div {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    color: rgb(104, 94, 94);
+}
+/*
+.container > div:nth-child(1) {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /*grid-column: 1 / 3;*/
+
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+   /* grid-row: 1 / 3;
+} */
+
+/* .container > div:nth-child(6) {
+    grid-row: 3 / 5;
+    grid-column: 3 / 4;
+} */
+/* .container > div:nth-child(9) {
+    grid-column: 1 / 4;
+} */
+
+/* @media only screen and (max-width: 779px) {
+    .container {
+        grid-template-columns: auto;
+    }
+    .container > div {
+        grid-column: initial !important;
+    }
+} */

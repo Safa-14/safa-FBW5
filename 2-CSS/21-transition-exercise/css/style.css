@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* width: 90%; */
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-image:linear-gradient(to right bottom,rgba(145, 218, 127, 0.534),rgba(120, 245, 89, 0.534)), url(../imgs/hero.jpg);
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.toggleBox {
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.toggleBox > span {
+    background-color: black;
+    height: 3px;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+}
+
+.toggleBox > span:nth-child(1) {
+    left: 20px;
+    top: 23.5px;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(.48,1.69,.73,-0.51);
+}
+
+.toggleBox > span:nth-child(2) {
+    left: 20px;
+    top: 33.5px;
+}
+
+.toggleBox > span:nth-child(3) {
+    left: 20px;
+    top: 43.5px;
+    transition-property: transform;
+    transition-duration:  0.5s;
+    transition-timing-function: cubic-bezier(.48,1.69,.73,-0.51);
+    /* transition: transform 0.5s cubic-bezier(.48,1.69,.73,-0.51); */
+}
+
+
+
+input {
+    display: none;
+}
+
+.container>input:checked + label>.toggleBox > span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+
+}
+
+.container>input:checked + label>.toggleBox > span:nth-child(2) {
+    display: none;
+}
+
+.container>input:checked + label>.toggleBox > span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+
+} 
+

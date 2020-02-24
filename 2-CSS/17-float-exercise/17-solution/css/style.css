@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(211, 204, 204);
+}
+/* make 3 div inside a parent div */
+
+.card {
+    background-color: white;
+    margin: 20px;
+    position: relative;
+    max-height: 416px;
+    /* overflow-y: scroll; */
+    box-shadow: 1px 7px 17px rgb(29, 28, 28);
+    border-radius: 10px;
+}
+
+
+/* put an image as background on the top and a title onthe bottom of the image*/
+
+.img1 {
+    height: 150px;
+    background-image:linear-gradient(rgba(243, 178, 94, 0.534),rgba(243, 178, 94, 0.534)), url('../imgs/nat-5.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img2 {
+    height: 150px;
+    background-image: linear-gradient(rgba(153, 247, 144, 0.534),rgba(153, 247, 144, 0.534)),url('../imgs/nat-6.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.img3 {
+    height: 150px;
+    background-image: linear-gradient(rgba(129, 178, 241, 0.534),rgba(129, 178, 241, 0.534)),url('../imgs/nat-7.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+    border-radius: 10px 10px 0px 0px;
+}
+.title1 {
+    position: absolute;
+    right: 3px;
+    top: 85px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(241, 209, 166)0%, rgb(243, 178, 94)100%);
+    padding: 5px;
+    color: white;
+}
+.title2 {
+    position: absolute;
+    right: 3px;
+    top: 115px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(241, 209, 166)0%, rgb(243, 178, 94)100%);
+    padding: 5px;
+    color: white;
+}
+
+.title3 {
+    position: absolute;
+    right: 3px;
+    top: 85px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(198, 240, 194)0%, rgb(59, 109, 55)100%);
+    padding: 5px;
+    color: white;
+}
+.title4 {
+    position: absolute;
+    right: 3px;
+    top: 115px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(198, 240, 194)0%, rgb(59, 109, 55)100%);
+    padding: 5px;
+    color: white;
+}
+
+.title5 {
+    position: absolute;
+    right: 3px;
+    top: 85px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(180, 202, 231)0%, rgb(100, 136, 184)100%);
+    padding: 5px;
+    color: white;
+}
+.title6 {
+    position: absolute;
+    right: 3px;
+    top: 115px;
+    text-transform: uppercase;
+    background:linear-gradient(to top, rgb(180, 202, 231)0%, rgb(100, 136, 184)100%);
+    padding: 5px;
+    color: white;
+}
+
+
+/* write a list for the description */
+.list {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+    font-size: smaller;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.list>li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(172, 168, 168, 0.925);
+}
+
+.list>li:last-child {
+    border-bottom: none;
+    
+}
+

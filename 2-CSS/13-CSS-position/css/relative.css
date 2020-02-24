@@ -1,0 +1,18 @@
+.someDiv {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    left: 50px;
+    top: 50px;
+    position: relative;
+}
+
+.subDiv {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    left: 225px;
+    top: 225px;
+    position: relative;
+    
+}

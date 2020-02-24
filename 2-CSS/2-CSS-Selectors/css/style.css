@@ -1,0 +1,20 @@
+/* Selector by TAG NAME */
+title{
+    color: red;
+    display: block;
+}
+
+/* Selector by CLASS NAME */
+.paragraph {
+    letter-spacing: 4px;
+    text-shadow: 1px 5px 3px rebeccapurple;
+}
+
+/* Selector by ID  */
+#someID{
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(58, 54, 54); 
+}
+
+
+    

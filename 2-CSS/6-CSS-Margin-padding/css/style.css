@@ -1,0 +1,19 @@
+/* *, ::after, ::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.someSpan1 {
+    background-color: red;
+    padding-right: 10px;
+    margin-right: 2px;
+    
+}
+
+.someSpan2 {
+    background-color: rgb(0, 26, 255);
+    margin-left: 0;
+    /* margin: 10px 50px 1px 5px; */
+    
+}

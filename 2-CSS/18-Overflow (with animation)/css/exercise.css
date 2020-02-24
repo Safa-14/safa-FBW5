@@ -1,0 +1,79 @@
+.container {
+    height: 60vh;
+    width: 80%;
+    overflow-x: hidden;
+    overflow-y: hidden;  
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
+    
+}
+
+.container >div >div:nth-child(1) {
+    background: url(../imgs/nat-5.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 60vh;
+    background-position-y: 30%;
+    float: left;
+ 
+}
+.container >div >div:nth-child(2) {
+    background: url(../imgs/nat-6.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 60vh;
+    background-position-y: 30%;
+    float: left;
+
+}
+.container >div >div:nth-child(3) {
+    background: url(../imgs/nat-7.jpg);
+    background-size: cover;
+    width: 80vw;
+    height: 60vh;
+    background-position-y: 60%;
+    float: left;
+
+}
+.container>div{
+    width: 240vw;
+    animation-name: photosDiv;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+    position: absolute;  
+    left: 0;
+    opacity: 0;
+}
+
+@keyframes photosDiv {
+
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+    33.33% {
+        left: -80vw;
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    66.66% {
+        left: -160vw;
+        opacity: 0;
+    }
+    96% {
+        opacity: 1;
+    }
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+
+}

@@ -1,0 +1,40 @@
+.flexDiv {
+    display: inline-flex;
+    vertical-align: top;
+    width: 200px;
+
+    /* childen layout direction */
+    flex-direction: row;    /*row, column, row-reverse, column-reverse */
+
+
+    /* the behaviour that the childen will do when the container width is less than the sum of their width */
+    flex-wrap: wrap;  /*wrap, nowrap, wrap-reverse*/
+    /* flex-flow: row wrap; */  /*shorthand for flex-direction and flex-wrap */
+
+
+    /* align children horizontally */
+    justify-content: space-around;     /* center, flex-start, flex-end, space-between, space-around */
+    
+
+    /*align children vertically */
+    align-items: center;   /*flex-end,flex-start, center */
+    background-color: lightgray;
+}
+
+.flexDiv>div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;  /*only the height of the text */
+    font-size: 40px;
+    color: white;
+    background-color: aqua;
+}
+
+.nextDiv {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: inline-block;
+}

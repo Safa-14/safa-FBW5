@@ -1,0 +1,23 @@
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border: 1px solid black;
+    transition-delay: 5s;
+    transition-property: transform;
+    transition-duration: 5s;
+    transform: rotateY(180deg);
+     
+}
+
+/* .card:hover {
+    transform: rotateY(180deg);
+} */
+
+.someDiv span {
+    position: absolute;
+    background-color: blue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

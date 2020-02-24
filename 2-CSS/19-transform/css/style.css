@@ -1,0 +1,46 @@
+.someDiv {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    /* transform: rotate(90deg);        tdawar el 7eja fel plan xy w ken 7artina x wale y idawarha 3d */
+    /* transform: scale(0.5,0.5);       /* idha3af el 7ajm */
+    /*transform: skew(10deg,10deg);     i3awajha selon l'axe eli 7atinou */
+    transform: translatey(100px); 
+
+    /* rotate, rotateX, rotateY, scalex, scaley, skew, skewx, skewy */
+}
+/* .someDiv:hover {
+    transform: skewy(10deg);    /*  i3awajha selon l'axe eli 7atinou  
+} */
+
+
+
+/* these 3 differents solutions are used to put the span in the middle of the conatiner */
+
+/*the FIRST solution */
+/* .someDiv span {
+    display: inline-block;
+    transform: translate(74px,83px);
+    background-color: blue;
+    width: 52px;
+    height: 34px;
+} */
+
+/*the SECOND solution */
+/* using % in translata referenced to the same element that is  */
+.someDiv span {
+    position: absolute;
+    background-color: blue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*the THIRD solution */
+/* .someDiv span {
+    position: absolute;
+    background-color: blue;
+    transform: translate(calc(100px - 50%), calc(100px - 50%));
+} */

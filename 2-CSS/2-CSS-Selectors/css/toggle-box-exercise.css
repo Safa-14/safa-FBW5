@@ -1,0 +1,12 @@
+input {
+    background-color: rgb(2, 2, 2);
+    border-radius: 25%;
+    width: 10%;
+    
+}
+label {
+    display: none;
+}
+input:checked + label {
+    display: block;
+}

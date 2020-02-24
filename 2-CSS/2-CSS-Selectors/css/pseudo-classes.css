@@ -1,0 +1,7 @@
+.someLink:visited {
+    color: saddlebrown;
+}
+
+.someLink:active {
+    color: blueviolet;
+}

@@ -1,0 +1,24 @@
+/* ALL TEXTS ARE RED
+.divClass {
+    color: red;
+}
+
+/* ALL PARAGRAPHS ARE RED */
+/* p {
+    color: red;
+} */
+
+/* ONLY THE PARAGRAPH INSIDE ARTICLE ELEMENT IS RED */
+/* article p {
+    color: red;
+} */
+
+/* ONLY THE PARAGRAPH WHICH IS DIRECTLY INSIDE THE ELEMENT WITH CLASS "divClass"*/
+/* .divClass > p {
+    color: red;
+} */ 
+
+.divClass div p ,
+.divClass>p {
+    color: red;
+}
