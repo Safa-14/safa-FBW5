@@ -3,6 +3,8 @@ try {
     document.write(arr(0) + '<br>')
 } catch (error) {
     document.write(error + '<br>')
+}finally {
+    document.write('I am gonna be shown anyway <br>')
 }
 
 
