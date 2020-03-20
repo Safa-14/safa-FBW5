@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="./app.js"></script>
+    
+</head>
+<body>
+    <h1 onclick = "clickEventHandler()">
+        Click me!
+    </h1>
+
+    <h2 ondblclick="console.log('double clicked!')">
+        double click me
+    </h2>
+
+    <h2 onmouseover="mouseOver()">
+        Mouse hover
+    </h2>
+
+    <hr>
+    <input type="text" onchange="change()" placeholder="standard value"><br>
+    <input type="text" onkeypress="keypress(5)">
+    
+    
+</body>
+</html>
+
+
+<!-- value on input we can change it but placeholder we cannt -->

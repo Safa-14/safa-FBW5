@@ -166,4 +166,6 @@ function strReverse(str) {
     return str.split('').reverse().join('')
 }
 
-document.write (strReverse(word))
+document.write (strReverse(word) + '<br>')
+
+

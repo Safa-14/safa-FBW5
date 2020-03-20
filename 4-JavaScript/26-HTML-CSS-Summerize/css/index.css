@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*       NAVIGATION starts here     */
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    display: flex; 
+}
+
+nav>ul>li {
+    margin: 10px;
+    background-color: darkgray;
+    border-radius: 10px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+
+nav>ul>li:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.384);
+    transform: scale(1.2);
+    
+}
+
+nav>ul>li:hover>a {
+    color: white;
+    
+}
+
+nav>ul>li>a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    
+}
+
+
+
+
+    
+/*       NAVIGATION ends here     */
+
+
+/*       BANNER  start here     */
+.banner {
+    height: 80vh;
+    background-image: url(../img/hero.jpg);
+    border: 5px solid black;
+    background-position-y: 40%;
+    background-position-x: 30%;
+    clip-path: polygon(0 0,100% 0, 100% 60vh, 0 80vh);
+    margin-top: 10px;
+    
+}
+
+/*       BANNER  end here     */
+
+
+/*       Second Part   start    */
+/* h2 {
+    text-align: center;
+    font-weight: 10px;
+    font-size: 20px;
+    color: brown;
+    margin: 10px;
+}
+
+.container {
+   
+    display: flex;
+    justify-content: center;
+}
+.container>div {
+    text-align: center;
+    width: 25vw;
+    height: 35vh;
+    background-color: burlywood;
+    margin: 20px;
+}
+
+h3 {
+    font-weight: 10px;
+    font-size: 20px;
+    color: brown;
+    margin: 20px;
+}
+
+.container>div>span {
+    padding: 50px;
+    
+}
+
+
+@media only screen and (max-width:400px){
+    .container {
+        flex-direction: column;
+        margin-top: -272px; 
+        
+        height: 200vh;
+    }
+
+    .container>div {
+        margin: 5px;
+        width: 90%;
+        
+       
+    }
+}
+
+
+      Second Part   end    */
+
+
+/* cards section starts here  */
+.cards {
+    width: 60vw;
+    margin: auto;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.card {
+    border: 2px solid gray;
+    width: 200px;
+}
+
+.cards>h2 {
+    text-align: center;
+}
+
+.card-head>h3 {
+    text-align: center;
+}
+
+.card-content{
+    margin: 5px;
+    border-top: 1px solid gray;
+}
+
+
+
+/*      Footer starts here       */
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(0, 0, 0, 0.74);
+
+    
+}
+
+.logo-container>img{
+    width: 150px;
+    
+}
+.contact-container>ul,
+.social{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.contact-container>ul>li>a,
+.social>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+.input-container>input,
+.input-container>textarea{
+    margin: 10px;
+}
+
+.footer-btn {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*      Footer ends here       */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px) {
+
+    /*       NAVIGATION starts here     */
+    nav>ul {
+        flex-direction: column;
+    }
+    nav>ul>li>a {
+        text-align: center;
+    }nav>ul>li {
+        margin: 3px;
+    }
+
+    /* cards section starts here  */
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+
+/* on the terminal write : ip addr show =>  10.10.0.173:5500  on the mobilephone   */

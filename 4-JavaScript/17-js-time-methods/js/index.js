@@ -11,4 +11,5 @@ document.write(x + ' <br>')  //will be overwrite after 5s
 function blaCallBck(t) {
     document.write(10 / t)
 }
- 
+
+
