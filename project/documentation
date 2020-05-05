@@ -1,0 +1,42 @@
+Start Page
+On the start Page i use simple container where i puted:
+*an image which will be on the graound smoothly at the click of the start button
+*3 button : first for the start game which will take us to the game Page and the second will take us to the list of the best 5 highscores and the last one is the exit which will take us out of the game.
+PS: Here i used js to control the mouvement of the undermarine to the bottom using setInterval on where each time it will increase the top realted to the time at that moment.
+
+
+
+
+
+
+
+
+
+Game Page
+I use here a container too to put the same image and style for the 4 pages where i puted differents canvas elements to draw our game:
+First i 
+
+
+
+
+IDEA:
+make a 2d breakout game with many options for example the bricks are moving bricks . there are underwater animals moving . The background let you feel that you are just in the ocean or neben an aquarium especially with the animations of the bricks.
+
+
+1. MAKING THE BRICKS: i make an array where i puted on differents rows mutiple underwater animals. It is an array for 4 rows and 12 columns.
+i needed to make many functions to draw each sort of animals because for the animated fisch i needed to use setinterval to draw each 300ms a delphin with differents mouvement. i use here an png image with transparent background. i make the same thing for the shark.
+For the octops and the fisch and shark and fishet i draw a simple image on the context.
+
+2.DRAWING THE BALL:For the ball i make a function to draw a cercle filled and i call this function each 20ms using setTimeout 
+and clear it each time with changing the x and y by adding a step
+
+3.DRAWING THE PADDLE: i make a simple function to draw an image and add to it an event with the up and down key.
+
+4. I make a coliision of the ball with thw wall and the bricks and the paddle.On this step w need to compare the x and y of the ball with the x and y of the paddle or the ball or the bricks.
+the collision between the ball and the bricks was not easy especially with the animated bricks i needed to stop the setinterval and clear the context.
+
+
+
+
+
+

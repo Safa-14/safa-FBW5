@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background: #111;
+		}
+
+		.container {
+			/*centers in the container*/
+			text-align: center;
+		}
+
+		div.circTxt {
+			/*allows for centering*/
+			display: inline-block;
+			/*adjust as needed*/
+			margin-bottom: 128px;
+			color: whitesmoke;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<!-- just a container used to position in the page -->
+	<div class="container">
+		<!--the holders for the text, reuse as desired-->
+		<div class="circTxt" id="test"></div>
+	</div>
+	<script>
+		circularText(" 2D Breakout          ", 150, 0);
+
+function circularText(txt, radius, classIndex) {
+  txt = txt.split(""),
+    classIndex = document.getElementsByClassName("circTxt")[classIndex];
+
+  var deg = 350 / txt.length,
+    origin = 260;
+
+  txt.forEach((ea) => {
+    ea = `<p style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+    classIndex.innerHTML += ea;
+    origin += deg;
+  });
+}
+	</script>
+</body>
+
+</html> -->

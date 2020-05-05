@@ -1,0 +1,28 @@
+#container {
+    width: 800px;
+    height: 550px;
+
+    position: relative;
+    border: 1px solid black;
+    /* background-image: url(../imgs/3.jpg);
+    background-size: cover; */
+}
+
+#paddleCanvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#bricksCanvas {
+    position: absolute;
+    z-index: 3;
+}
+#ballCanvas {
+    position: absolute;
+    z-index: 2;
+}
+
+#waveCanvas {
+    position: absolute;
+    z-index: 2;
+}

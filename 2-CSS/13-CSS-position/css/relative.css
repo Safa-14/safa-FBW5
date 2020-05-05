@@ -4,7 +4,7 @@
     background-color: red;
     left: 50px;
     top: 50px;
-    position: relative;
+    position: absolute;
 }
 
 .subDiv {
@@ -13,6 +13,6 @@
     background-color: violet;
     left: 225px;
     top: 225px;
-    position: relative;
+    position: absolute;
     
 }

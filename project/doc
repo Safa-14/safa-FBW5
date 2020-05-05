@@ -1,0 +1,18 @@
+2D BREAKOUT GAME is a game where you should destroy all the bricks with a ball without letting this ball touch the ground.
+You have 3 livess and each time you lost the ball you will lose a life until you lose them all.
+I build this game using HTML5, canvas, CSS3, VANILLA JAVASCRIPT.
+
+Installation
+1.open the terminal on your computer
+2. select where you want to put your project using  cd ..
+3. write this line:git clone 
+4.when every thing is done pull the file with writiing : git pull origin master
+5. and then you will get the folder on your computer.
+
+
+
+
+
+
+
+

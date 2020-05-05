@@ -1,0 +1,16 @@
+#container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+     background-image: url(../imgs/ocean2.jpg);
+    background-size: cover; 
+    position: relative;
+}
+#myCanvas {
+    position: absolute;
+    z-index: 1;
+}
+#myCanvas1 {
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#someDiv {
+    position: absolute;  /* ay div n7eboha tet7arek lezem n7otoha absolute */
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    background-color: lightslategray;
+    border: 2px solid black;
+}
+
+#btn {
+    margin-top: 150px;
+}
+
+.container{
+    background-color: aquamarine;
+    height: 200px;
+    width: 400px;
+}
+
+.container>div:nth-child(1){
+    background-color: burlywood;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.chainDiv {
+    background-color: red;
+}

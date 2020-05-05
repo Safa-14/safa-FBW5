@@ -1,0 +1,12 @@
+.redDiv {
+    background-color: red; /* the id is the stongest */
+}
+
+#div1 {
+    
+    height: 100px;
+    width: 100px;
+}
+div {
+    background-color: black;
+}
