@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+</head>
+<body>
+    
+    <h2>Hello FBW5</h2>
+
+    <%fruits.forEach(fruit => {%>
+        <div class="fruitContainer">
+            <h2><%= fruit %></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem illo numquam quia tempora incidunt esse. Aliquam harum asperiores rem ad minima inventore deserunt quam, unde ipsa, eum odio quas!</p>
+        </div>
+        <%})%>
+        <%- include('partials/footer',{footerName : 'some Footer'}) %>
+</body>
+</html>

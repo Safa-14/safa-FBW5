@@ -1,0 +1,7 @@
+.star {
+    display: inline-block;
+    background-image: url('../images/star.png');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
