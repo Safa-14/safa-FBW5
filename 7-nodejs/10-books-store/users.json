@@ -1,11 +1,32 @@
 {
-    "users":[
-        {
-            "id":"1",
-            "email": "safsoufa.msk@gmail.com",
-            "password": "123456789"
-
-        }
-    ],
-    "newId": 2
+    "users": [{
+        "id": "1",
+        "email": "safsoufa.msk@gmail.com",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 2,
+        "email": "ahmad",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 3,
+        "email": "ahmad2",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 4,
+        "email": "safa@ggf.fr",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 5,
+        "email": "safa1@ggf.fr",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 6,
+        "email": "gjdfkhfk@fgfg.fr",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }, {
+        "id": 7,
+        "email": "gjdfokhfk@fgfg.fr",
+        "password": "sha1$052e19ca$1$3542eae1fa130034f0db0a8d325a7f1cfc31e8af"
+    }],
+    "newId": 8
 }

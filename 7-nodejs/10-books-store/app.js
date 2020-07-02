@@ -10,6 +10,7 @@ const fs = require('fs')
 //include data module
 const dataModule = require('./modules/dataModule')
 
+const adminRouter = require('./routes/adminRoute')
 
 
 
@@ -29,8 +30,10 @@ app.use(express.urlencoded({
 app.use(express.json())
 //create session object options
 const sessionOptions = {
-    secret: 'bookStore',
-    cookie: {}
+    secret: 'bookstore',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {} //secure when we have https in the path
 }
 //use a session
 app.use(session(sessionOptions))
@@ -45,10 +48,17 @@ app.use(fileupload({
     }
 }));
 
+//app.use(bla=>{}) function in use is a middleware
+//we need to add the usage of any router after all others middleware so tey will effect on router requests
+app.use('/admin', adminRouter);
 
 
 
-
+//Read the file
+const jsonText = fs.readFileSync(__dirname + '/users.json') //to write the meals.json file
+/* Just send the file */
+const users = JSON.parse(jsonText).users;
+//console.log(users.users);
 //////////////////////////////////////////////
 //////////  RENDER FOLDERS         ///////////
 ///////////////////////////////////////////////
@@ -57,15 +67,64 @@ app.get('/', (req, res) => {
     res.render('main')
 });
 
+// app.get('/admin/addBooks', (req, res) => {
+//     res.render('addBooks')
+// });
+
 app.get('/register', (req, res) => {
     res.render('register')
 });
 
-//Read the file
-const jsonText = fs.readFileSync(__dirname + '/users.json') //to write the meals.json file
-/* Just send the file */
-const users = JSON.parse(jsonText).users;
-//console.log(users.users);                                                                               
+app.get('/login', (req, res) => {
+    
+    if (req.session.user) {
+        res.redirect('/admin')
+    } else {
+        res.render('login')
+    }
+});
+
+app.post('/login', (req, res) => {
+    console.log(req.body);
+    if (req.body.email && req.body.password) {
+        dataModule.checkUser(req.body.email.trim(),req.body.password).then(user => {
+            req.session.user = user
+            res.json(1)
+        }).catch(error => {
+            if (error == 3) {
+                res.json(4)
+            }else{
+                res.json(3)
+            }
+        })
+    }else {
+        res.json()
+    }
+    
+});
+
+//shop route
+app.get('/shop', (req, res) => {
+    dataModule.getAllBooks().then(books => {
+        res.render('shop', {books})
+    })
+    
+});
+
+app.get('/book/:booktitle/:id', (req, res) => {
+    //res.send(req.params.id); //to show on the browser
+    
+    dataModule.getBook(req.params.id).then(book => {
+        let checkLogin = false
+        if (req.session.user) {
+            checkLogin = true
+        }
+        res.render('book',{book, checkLogin})
+    }).catch((error)=> {
+        res.send('404, book couldnt be found')
+    })
+});
+                                                                               
 
 app.post('/register', (req, res) => {
      console.log(req.body);
@@ -84,9 +143,9 @@ app.post('/register', (req, res) => {
         }).catch(error => {
             console.log(error);
             if (error == "exist") {
-                res.json(4)
-            } else {
                 res.json(3)
+            } else {
+                res.json(4)
             }
             
         })

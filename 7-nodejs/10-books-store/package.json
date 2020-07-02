@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "nodemon --ignore '*.json' app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.1.7-alpha.3",
     "express-session": "^1.17.1",
-    "nodemailer": "^6.4.10"
+    "nodemailer": "^6.4.10",
+    "password-hash": "^1.2.2"
   }
 }

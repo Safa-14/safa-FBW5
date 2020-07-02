@@ -1,0 +1,25 @@
+{
+    "books": [{
+        "id": 1,
+        "title": "java",
+        "description": "<p>hello world</p>",
+        "imgs": ["/uploadedFiles/java_1_0.png"],
+        "pdfUrl": "/uploadedFiles/java_1_.pdf",
+        "userId": 1
+    }, {
+        "id": 2,
+        "title": "html",
+        "description": "<p>Hello guys</p>",
+        "imgs": ["/uploadedFiles/html_1_0.png"],
+        "pdfUrl": "/uploadedFiles/html_1_.pdf",
+        "userId": 1
+    }, {
+        "id": 3,
+        "title": "engineer",
+        "description": "<p style=\"text-align: center;\"><em><strong>skills</strong></em></p>\n<ol>\n<li style=\"text-align: left;\">c</li>\n<li style=\"text-align: left;\">html</li>\n<li style=\"text-align: left;\">js</li>\n</ol>",
+        "imgs": ["/uploadedFiles/engineer_1_0.png", "/uploadedFiles/engineer_1_1.jpg", "/uploadedFiles/engineer_1_2.jpg", "/uploadedFiles/engineer_1_3.png"],
+        "pdfUrl": "/uploadedFiles/engineer_1_.pdf",
+        "userId": 1
+    }],
+    "newId": 4
+}
