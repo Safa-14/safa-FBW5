@@ -8,7 +8,7 @@ const cookie = require('cookie-parser')
 const fs = require('fs')
 
 //include data module
-const dataModule = require('./modules/dataModule')
+const dataModule = require('./modules/mongodbDataModule')
 
 const adminRouter = require('./routes/adminRoute')
 

@@ -40,6 +40,7 @@ function showModal(error,title,content) {
   const modal_header = modal.querySelector('.modal-header')
   const modal_body = modal.querySelector('.modal-body')
   if (error) {
+    
       modal_header.classList.add('bg-danger')
       modal_header.classList.remove('bg-success')
   } else {
@@ -51,5 +52,12 @@ function showModal(error,title,content) {
   $('#resultModal').modal('show') 
 }
 
-
+function btnWait(btn, wait, text) {
+  btn.innerText = text
+  if (wait) {
+    btn.disabled = true
+  }else {
+    btn.disabled = false
+  }
+}
 
