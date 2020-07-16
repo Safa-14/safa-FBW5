@@ -8,7 +8,7 @@ const cookie = require('cookie-parser')
 const fs = require('fs')
 
 //include data module
-const dataModule = require('./modules/mongodbDataModule')
+const dataModule = require('./modules/mongooseDataModule')
 
 const adminRouter = require('./routes/adminRoute')
 
@@ -92,9 +92,9 @@ app.post('/login', (req, res) => {
             res.json(1)
         }).catch(error => {
             if (error == 3) {
-                res.json(4)
-            }else{
                 res.json(3)
+            }else{
+                res.json(4)
             }
         })
     }else {
